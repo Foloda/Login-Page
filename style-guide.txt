@@ -1,0 +1,102 @@
+Design System & Tokens
+To keep all three pages visually cohesive, we will use a Modern SaaS / Developer-Friendly Minimalist aesthetic (inspired by platforms like Vercel and Linear).
+
+Canvas/Background: Neutral 50 (#F8FAFC for Light Mode) / Neutral 950 (#090A0F for Dark Mode core surface)
+
+Card/Surface Background: Pure White (#FFFFFF) in light mode / Neutral 900 (#12141C) in dark mode
+
+Primary Brand Color: Electric Indigo (#6366F1 or Indigo 600) with a glowing focus ring (#818CF8 with 20% opacity)
+
+Text Hierarchy:
+
+Heading: Slate 900 (#0F172A), Bold, 24px/32px
+
+Body/Labels: Slate 600 (#475569), Medium, 14px
+
+Placeholder: Slate 400 (#94A3B8)
+
+Radius (Border-Radius): 12px for cards/inputs, 8px for buttons
+
+Layout: Split-Screen Desktop Layout (Left side: Immersive brand illustration/value prop; Right side: The authentication form). On mobile, it collapses to a single centered card.
+
+1. Login Page Design
+The goal here is friction-free access with clear alternative social sign-in options.
+
+Left Frame (Brand Panel):
+
+Dark gradient background with subtle abstract geometric grid lines.
+
+A rotating customer testimonial quote: "This platform completely transformed our workflow efficiency."
+
+Right Frame (Form Card):
+
+Header: "Welcome back" (Heading 1, 24px) + "Please enter your details to sign in." (Subtext, 14px).
+
+Form Fields:
+
+Email Address: Label + Input with mail icon on the left, clear placeholder (name@example.com).
+
+Password: Label + Input with eye-toggle icon on the right for visibility.
+
+Action Row:
+
+"Remember me" checkbox on the left.
+
+"Forgot password?" clickable text link aligned right (#6366F1, hover underline).
+
+Primary Button: Full-width "Sign In" button (#6366F1, hover state #4F46E5).
+
+Divider: "Or continue with" with horizontal hair-lines.
+
+Social Logins: Two side-by-side secondary buttons (Google and GitHub icons with clean borders).
+
+Footer Link: "Don't have an account? Sign up."
+
+2. Registration Page Design
+Designed to minimize drop-offs while collecting essential security and user details.
+
+Header: "Create an account" + "Start your 14-day free trial. No credit card required."
+
+Form Fields:
+
+Full Name: Single input field.
+
+Email Address: Standard email input with instant inline validation state (e.g., green checkmark when valid).
+
+Password: Input with a Password Strength Meter underneath (weak/medium/strong dynamic bar indicator) and a checklist for rules (8+ chars, 1 number, 1 special char).
+
+Terms Agreement: Checkbox: "I agree to the Terms of Service and Privacy Policy."
+
+Primary Button: Full-width "Create Account".
+
+Footer Link: "Already have an account? Log in."
+
+3. Forgot Password Page Design
+A clean, reassuring, minimalist flow that prevents user panic when locked out.
+
+Card Container: Narrower, centered single card for high focus.
+
+Icon Header: A sleek lock/key icon inside a soft indigo background circle (48px x 48px).
+
+Header: "Reset your password" + "Enter your email address and we'll send you a secure link to reset your password."
+
+Form Field:
+
+Email Address: Input field pre-focused on page load.
+
+Primary Button: "Send Reset Instructions".
+
+Secondary Action: Back arrow link: "← Back to log in".
+
+Success State (Conditional view in same frame):
+
+Replaces the form with a success illustration, "Check your email" heading, and text: "We've sent a recovery link to user@example.com." with a "Resend email" button.
+
+📐 Figma Auto Layout Blueprint Tips for You
+When you open Figma to build this, structure your layers like this:
+
+Desktop Frame: 1440px × 900px (Layout Grid: 12 Columns, Margin: 0, Gutters: 0 for split screen).
+
+Parent Container: Set to Auto Layout (Horizontal), Fill container, Hug height. Left side width 50%, Right side width 50% with padding 80px.
+
+Form Elements: Wrap each input (Label + Input Box + Error message) in an Auto Layout (Vertical) with 6px spacing.
