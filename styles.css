@@ -184,6 +184,19 @@ main {
   border-radius: 12px;
   box-shadow: 0 2px 4px 0 #00000082;
 }
+.reset-title {
+  text-align: center;
+  padding: 15px 20px 0 20px;
+}
+.reset-title h1 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.reset-title p {
+  font-size: 20px;
+  line-height: 1.5;
+}
 
 .back-to-login {
   display: flex;
@@ -200,6 +213,11 @@ main {
 .back-to-login a:hover {
   text-decoration: underline #6366f1;
 }
+
 .back-to-login svg {
   height: 18px;
+}
+.locked-img {
+  width: 100px;
+  margin: 0 auto 0 auto;
 }
